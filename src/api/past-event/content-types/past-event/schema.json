@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "past_events",
+  "info": {
+    "singularName": "past-event",
+    "pluralName": "past-events",
+    "displayName": "Past Event",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "body": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
